@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Stars for Vanya</title>
+<script type="text/javascript" src="js/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="js/stars.js"></script>
+<style>
+
+.uiStarsRatable
+	{
+		background-color: #F2F2F2;
+	}
+	.uiStarsRatable i 
+	{
+		display: inline-block;
+		height: 11px;
+		width: 11px;
+	}
+
+    .fullStar 
+    {
+        background-image: url(images/full_star_grey.png);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        margin-left: -3px;
+    }
+
+    .emptyStar 
+    {
+        background-image: url(images/empty_star_grey.png);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        margin-left: -3px;
+    }
+    
+    .emptyStarWhite 
+    {
+        background-image: url(images/empty_star_white.png);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        margin-left: -3px;
+    }
+    
+    .fullStarWhite 
+    {
+        background-image: url(images/full_star_white.png);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        margin-left: -3px;
+    }
+</style>
+</head>
+
+<body>
+<div class="uiStarsRatable">
+    <i style="margin:0;" id="star1" class=" emptyStar" title="Hate it" onmouseover="$.fn.StarMouseOver(this.id)" onmouseout="$.fn.StarMouseOut(this.id)" onclick="$.fn.StarMouseClick(this.id)"></i>
+    <i id="star2" class=" emptyStar" title="Don't like it" onmouseover="$.fn.StarMouseOver(this.id)" onmouseout="$.fn.StarMouseOut(this.id)" onclick="$.fn.StarMouseClick(this.id)"></i>
+    <i id="star3" class=" emptyStar" title="Like it" onmouseover="$.fn.StarMouseOver(this.id)" onmouseout="$.fn.StarMouseOut(this.id)" onclick="$.fn.StarMouseClick(this.id)"></i>
+    <i id="star4" class=" emptyStar" title="Really like it" onmouseover="$.fn.StarMouseOver(this.id)" onmouseout="$.fn.StarMouseOut(this.id)" onclick="$.fn.StarMouseClick(this.id)"></i>
+    <i id="star5" class=" emptyStar" title="Love it!" onmouseover="$.fn.StarMouseOver(this.id)" onmouseout="$.fn.StarMouseOut(this.id)" onclick="$.fn.StarMouseClick(this.id)"></i>
+</div>
+</body>
+</html>
